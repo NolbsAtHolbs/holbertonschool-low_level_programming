@@ -2,7 +2,7 @@
 /**
  * main - the entry point of a program where the execution of a program starts.
  *
- * return - indic8s tht prgrm implmntatn is accmplshd & tht de prcssr can now b uploadd.
+ * return - ndc8s tht prgrm mplmnttn is ccmplshd & tht d prcssr cn nw b upldd.
  */
 int main(void)
 {
