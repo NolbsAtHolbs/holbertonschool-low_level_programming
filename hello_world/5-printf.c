@@ -2,7 +2,7 @@
 /*
  * main - Entry point of a program where the execution of a program starts.
  *
- * Return: Always 0 Nds de Xcution of a functn, & rtrns cntrl to de cllng fnctn.
+ * Return: Always 0 (success)
  */
 int main(void)
 {
