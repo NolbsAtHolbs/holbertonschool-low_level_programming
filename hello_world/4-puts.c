@@ -2,7 +2,7 @@
 /**
  * main - the entry point of a program where the execution of a program starts.
  *
- * return - indicates that the program implementation is accomplished and that the processor can now be uploaded.
+ * return - indic8s tht prgrm implmntatn is accmplshd & tht de prcssr can now b uploadd.
  */
 int main(void)
 {
