@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * main - prints positive, negative, or neutral
+ * main - prints positive, negative, or zero
  *
  * return: always 0 (success)
  */
@@ -11,6 +11,7 @@ int main(void)
 {
 	int z;
 	srand(time(0));
+
 	z = rand() - RAND_MAX / 2;
 	if (z > 0)
 	{
