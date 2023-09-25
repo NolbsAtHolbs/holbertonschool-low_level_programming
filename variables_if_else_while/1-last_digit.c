@@ -4,7 +4,7 @@
 /**
  * main - prints the last digit of a random number stored in variable n
  *
- * Return: Success!
+ * Return: Success
  */
 int main(void)
 {
@@ -20,7 +20,7 @@ int main(void)
 	{
 		printf("Last digit of %d is %d and is greater than 5\n", n, elldee);
 	}
-	else if (elldee < 6 && != 0)
+	else if (elldee < 6, && elldee != 0)
 	{
 		printf("Last digit of %d is %d and is less than 6 and not 0\n", elldee);
 	}
