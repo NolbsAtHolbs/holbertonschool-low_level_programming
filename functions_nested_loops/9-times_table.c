@@ -1,8 +1,9 @@
+#include <stdio.h>
 #include "main.h"
 /**
- * print_times_table - prints the 9 mutliplication table
+ * times_table - prints the 9 mutliplication table, starting with 0
  */
-void print_times_table(void)
+void times_table(void)
 {
 	int x, y, product;
 
