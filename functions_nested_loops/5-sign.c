@@ -2,7 +2,7 @@
 
 /**
  * print_sign - prints sign of number
- * @c: number that gets sign printed
+ * @n: number that gets sign printed
  * Return: 1 if number gr8r thn zero, 0 if zero, -1 if number is less thn zero
  */
 int print_sign(int n)
