@@ -9,7 +9,7 @@ int main(void)
 	char hexletters;
 
 	for (hexnumbers = 0; hexnumbers < 10; hexnumbers++)
-		putchar(hexnumbers);
+		putchar(hexnumbers + '0');
 
 	for (hexletters = 'a'; hexletters < 'f'; hexletters++)
 		putchar(hexletters);
