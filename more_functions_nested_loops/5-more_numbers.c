@@ -16,7 +16,7 @@ void more_numbers(void)
 				_putchar(y % 10 + '0');
 				
 			else
-				_putchar(y % 10 + '1');
+				_putchar(y % 10 + '10');
 		}
 		_putchar('\n');
 	}
