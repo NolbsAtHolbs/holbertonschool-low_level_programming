@@ -2,9 +2,11 @@
 #include "main.h"
 /**
  * _isupper - checks case, positive = upper
+ * @c: character checkee
  *
  * Return: 1 if c is uppercase, else 0
  */
+
 int _isupper(int c)
 {
 	if (c >= 'A' && c <= 'Z')
