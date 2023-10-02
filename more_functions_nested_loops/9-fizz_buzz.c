@@ -17,12 +17,15 @@ int main(void)
 
 		else
 			if (n % 5 == 0)
-				printf("Buzz ");
+				if (h == 100)
+					printf("Buzz");
+					printf("\n");
+				else
+					printf("Buzz ");
 
 		else
 			printf("%d ", n);
 	n++;
 	}
-	printf("\n");
 return (0);
 }
