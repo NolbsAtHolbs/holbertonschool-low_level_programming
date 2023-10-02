@@ -17,7 +17,7 @@ int main(void)
 
 		else
 			if (n % 5 == 0)
-				if (h == 100)
+				if (n == 100)
 					printf("Buzz");
 					printf("\n");
 				else
