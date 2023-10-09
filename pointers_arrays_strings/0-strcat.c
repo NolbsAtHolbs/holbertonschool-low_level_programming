@@ -4,8 +4,8 @@
 
 /**
  * _strcat - concatenates strings
- * dest: pointer to destination string
- * src - pointer to source string
+ * @dest: pointer to destination string
+ * @src: pointer to source string
  * Return: result point dest
  */
 
