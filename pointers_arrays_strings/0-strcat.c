@@ -1,8 +1,27 @@
 #include <stdio.h>
 #include <string.h>
-
-int main (void)
+#include "main2.h"
+/**
+  * test - burger
+  * Return: result array dest
+  */
+char *_strcat(char *dest, char *src)
 {
+    char *result = dest;
   
-    return 0;
+    while (*dest != '\0')
+    {
+        dest++;
+    }
+
+    while (*src != '\0')
+    {
+        *dest = *src;
+        dest++;
+        src++;
+    }
+
+    *dest = '\0';
+
+    return result;
 }
