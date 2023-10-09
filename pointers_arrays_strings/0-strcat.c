@@ -3,7 +3,7 @@
 #include "main2.h"
 /**
   * test - burger
-  * Return: result array dest
+  * Return: result point dest
   */
 char *_strcat(char *dest, char *src)
 {
