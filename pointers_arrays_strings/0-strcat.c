@@ -1,27 +1,29 @@
 #include <stdio.h>
 #include <string.h>
 #include "main2.h"
+
 /**
-  * test - burger
-  * Return: result point dest
-  */
+ * test - burger
+ * Return: result point dest
+ */
+
 char *_strcat(char *dest, char *src)
 {
-    char *result = dest;
-  
-    while (*dest != '\0')
-    {
-        dest++;
-    }
+  char *result = dest;
 
-    while (*src != '\0')
-    {
-        *dest = *src;
-        dest++;
-        src++;
-    }
+  while (*dest != '\0')
+  {
+   dest++;
+  }
 
-    *dest = '\0';
+  while (*src != '\0')
+  {
+   *dest = *src;
+   dest++;
+   src++;
+  }
 
-    return result;
+  *dest = '\0';
+ 
+ return result;
 }
