@@ -3,7 +3,9 @@
 #include "main2.h"
 
 /**
- * test - burger
+ * _strcat - concatenates strings
+ * dest - pointer to destination string
+ * src - pointer to source string
  * Return: result point dest
  */
 
