@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <ctype.h>
 #include "main2.h"
 
 /**
@@ -6,6 +7,19 @@
  * @entry - its a string
  * Return: capped words of string
  */
+
+int is_separator(char c)
+{
+	char separators[] = " \t\n,;.!?\"(){}";
+    for (int i = 0; separators[i] != '\0'; i++)
+		{
+			if (c == separators[i])
+			{
+				return (1);
+			}
+		}
+	return (0);
+}
 
 char *cap_string(char *str)
 {
