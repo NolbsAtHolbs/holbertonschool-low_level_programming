@@ -1,10 +1,9 @@
-#include <stdio.h>
-#include "main3.h"
+#include "main.h"
 
 /**
- * print_chessboard - prints a chessboard english style
- * @a: array for chessboard
- * Return: na
+ * print_chessboard - prints the chessboard
+ * @a: pointer to pieces to print
+ * Return: void
  */
 
 void print_chessboard(char (*a)[8])
