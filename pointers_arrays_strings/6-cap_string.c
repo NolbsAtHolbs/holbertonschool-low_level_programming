@@ -4,8 +4,8 @@
 
 /**
  * cap_string - capitalizes all words of a string
- * is_separator -  checks if a character is a separator
- * @c - character checked
+ * is_separator - checks if a character is a separator
+ * @c: character checked
  * @str - its a string
  * Return: capped words of string
  */
@@ -14,6 +14,7 @@ int is_separator(char c)
 {
 	char separators[] = " \t\n,;.!?\"(){}";
 	int i = 0;
+
 	while (separators[i] != '\0')
 	{
 		if (c == separators[i])
