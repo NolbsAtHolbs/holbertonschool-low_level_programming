@@ -4,7 +4,7 @@
 
 /**
  * cap_string - capitalizes all words of a string
- * is_separator - Checks if a character is a separator
+ * is_separator - Checks if a character is a separator.
  * @c: character checked
  *
  * Description: This function checks
