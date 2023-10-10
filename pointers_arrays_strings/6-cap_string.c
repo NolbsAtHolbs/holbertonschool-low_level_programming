@@ -7,29 +7,27 @@
  * Return: capped words of string
  */
 
-char *cap_string(char *entry)
+char *cap_string(char *str)
 {
-	int capper, index, count;
+	int capper = 1;
+	int i = 0;
 
-	char chars[] = {' ', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}', '\t', '\n', '\0'};
-
-	capper = 32;
-
-	for (index = 0; entry[index] != '\0'; index++)
+	while (str[i] != '\0')
 	{
-		if (entry[index] >= 'index' && entry[index] <= 'z')
+		if (is_separator(str[i]))
 		{
-			entry[index] =  entry[index] - capper;
+			capper = 1;
 		}
-		capper = 0;
-		for (count = 0; chars[count] != '\0'; count++)
+		else if (capper)
 		{
-			if (chars[count] == entry[index])
-			{
-				capper = 32;
-				break;
-			}
+			str[i] = toupper(str[i]);
+			capper = 0;
 		}
+		else
+		{
+			str[i] = tolower(str[i]);
+		}
+		i++;
 	}
-	return (entry);
+	return (str);
 }
