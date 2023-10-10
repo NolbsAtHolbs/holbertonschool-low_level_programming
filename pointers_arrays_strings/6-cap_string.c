@@ -13,7 +13,7 @@ int is_separator(char c)
 	int i = 0;
 	char separators[] = " \t\n,;.!?\"(){}";
 
-    for (separators[i] != '\0'; i++)
+    for (int i = 0; separators[i] != '\0'; i++)
 		{
 			if (c == separators[i])
 			{
