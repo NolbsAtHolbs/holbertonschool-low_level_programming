@@ -4,7 +4,7 @@
 
 /**
  * cap_string - capitalizes all words of a string
- * @is_separator: checks if a character is a separator
+ * is_separator - checks if a character is a separator
  * @c: character checked
  * @str - its a string
  * Return: capped words of string
