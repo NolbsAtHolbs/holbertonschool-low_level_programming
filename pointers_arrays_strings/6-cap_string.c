@@ -10,16 +10,16 @@
 
 int is_separator(char c)
 {
-	int i = 0;
 	char separators[] = " \t\n,;.!?\"(){}";
-
-    for (int i = 0; separators[i] != '\0'; i++)
+	int i = 0;
+	while (separators[i] != '\0')
+	{
+		if (c == separators[i])
 		{
-			if (c == separators[i])
-			{
-				return (1);
-			}
+			return (1);
 		}
+		i++;
+	}
 	return (0);
 }
 
