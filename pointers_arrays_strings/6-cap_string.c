@@ -6,6 +6,8 @@
  * cap_string - capitalizes all words of a string
  * is_separator - Checks if a character is a separator
  * @c: character checked
+ *
+ * Description: This function checks
  * @str - its a string
  * Return: capped words of string
  */
