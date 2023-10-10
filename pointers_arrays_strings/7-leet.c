@@ -1,20 +1,32 @@
 #include <stdio.h>
 #include "main2.h"
 
-char *_strcat(char *dest, char *src)
+char *leet(char *str)
 {
-	char *result = dest;
-	
-	while (*dest != '\0')
+	char *p = str;
+	while (*p)
 	{
-		dest++;
+		if (*p == 'a' || *p == 'A')
+		{
+			*p = '4';
+		}
+		else if (*p == 'e' || *p == 'E')
+		{
+			*p = '3';
+		}
+		else if (*p == 'o' || *p == 'O')
+		{
+			*p = '0';
+		}
+		else if (*p == 't' || *p == 'T')
+		{
+			*p = '7';
+		}
+		else if (*p == 'l' || *p == 'L')
+		{
+			*p = '1';
+		}
+		p++;
 	}
-	while (*src != '\0')
-	{
-		*dest = *src;
-		dest++;
-		src++;
-	}
-	*dest = '\0';
-	return (result);
+	return (str);
 }
