@@ -9,20 +9,14 @@
 
 void print_chessboard(char (*a)[8])
 {
-	int row = 0;
-	void print_row()
+	int i, j;
+
+	for (i = 0; i < 8; i++)
 	{
-		if (row >= 8)
+		for (j = 0; j < 8; j++)
 		{
-			return;
+			_putchar(a[i][j]);
 		}
-		printf("%c ", a[row][0]);
-		row++;
-		print_row();
-	}
-	print_row();
-	if (row == 8)
-	{
-		printf("\n");
+		_putchar('\n');
 	}
 }
