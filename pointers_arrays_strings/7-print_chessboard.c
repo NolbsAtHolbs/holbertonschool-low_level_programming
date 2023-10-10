@@ -9,12 +9,22 @@
 
 void print_chessboard(char (*a)[8])
 {
-	for (int i = 0; i < 8; i++)
+	if (row < 8)
 	{
-		for (int j = 0; j < 8; j++)
+		printf("%c ", a[row][0]);
+		print_row(a, row + 1);
+		if (row == 7)
 		{
-			printf("%c ", a[i][j]);
+			printf("\n");
 		}
-		printf("\n");
+	}
+}
+
+void print_chessboard(char (*a)[8])
+{
+	if (a != NULL)
+	{
+		print_row(a, 0);
+		print_chessboard(a + 1);
 	}
 }
