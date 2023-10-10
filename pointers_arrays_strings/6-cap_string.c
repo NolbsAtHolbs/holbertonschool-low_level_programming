@@ -10,30 +10,22 @@
 char *cap_string(char *str)
 {
 	int capitalize_next = 1;
-	
+
 	for (int i = 0; str[i] != '\0'; i++)
 	{
-		if ((str[i] >= 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'Z'))
-		{
-			if (capitalize_next)
-			{
-				if (str[i] >= 'a' && str[i] <= 'z')
-				{
-					str[i] -= ('a' - 'A');
-				}
-				capitalize_next = 0;
-			}
-			else
-			{
-				if (str[i] >= 'A' && str[i] <= 'Z')
-				{
-					str[i] += ('a' - 'A');
-				}
-			}
-		}
-		else
+		if (isspace(str[i]) || ispunct(str[i]))
 		{
 			capitalize_next = 1;
+		}
+		else if (capitalize_next && isalpha(str[i]))
+		{
+			str[i] = toupper(str[i]);
+
+			capitalize_next = 0;
+		}
+		else if (!capitalize_next && isalpha(str[i]))
+		{
+			str[i] = tolower(str[i]);
 		}
 	}
 	return (str);
