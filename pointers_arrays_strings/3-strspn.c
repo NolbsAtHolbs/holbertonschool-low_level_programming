@@ -2,21 +2,32 @@
 #include "main3.h"
 
 /**
- * _strchr - gets the length of a prefix substring
+ * _strspn - gets the length of a prefix substring
  * @s: pointer
- * @c: character to be located within string
+ * @accept: pointer to accepted characters string
  * Return: Length of prefix substring
  */
 
-char *_strchr(char *s, char c)
+unsigned int _strspn(char *s, char *accept)
 {
+	unsigned int count = 0;
 	while (*s != '\0')
 	{
-		if (*s == c)
+		char *a = accept;
+		while (*a != '\0')
 		{
-			return (s);
+			if (*s == *a)
+			{
+				count++;
+				break;
+			}
+			a++;
+		}
+		if (*a == '\0')
+		{
+			return (count);
 		}
 		s++;
 	}
-	return (NULL);
+	return (count);
 }
