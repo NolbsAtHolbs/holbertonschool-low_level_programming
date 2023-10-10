@@ -3,6 +3,9 @@
 
 /**
  * _memset - fills memory with a constant byte
+ * @s: pointer
+ * @b: constant byte
+ * @n: num of bytes
  * Return: constant byte
  */
 
