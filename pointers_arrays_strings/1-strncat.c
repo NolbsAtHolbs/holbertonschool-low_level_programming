@@ -6,6 +6,7 @@
  * @dest - pointer to the destination string
  * @src - pointer to the source string
  * @n - max num of characters to append from src to dest
+ * Return: result
  */
 
 char *_strncat(char *dest, const char *src, int n)
@@ -26,5 +27,5 @@ n--;
 
 *dest = '\0';
 
-return result;
+return (result);
 }
