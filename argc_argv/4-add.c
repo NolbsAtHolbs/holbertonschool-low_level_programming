@@ -9,7 +9,7 @@
 int is_positive_number(const char *str)
 {
 	int i = 0;
-	for (i = 0; str[i] != '\0'; i++)
+	for (i = 0, str[i] != '\0', i++)
 	{
 		if (!isdigit(str[i]))
 		{
@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 	int i = 1
-	for (i = 1; i < argc; i++)
+	for (i = 1, i < argc, i++)
 	{
 		if (!is_positive_number(argv[i]))
 		{
