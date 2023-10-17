@@ -5,7 +5,7 @@
  * main - Prints the addition of positive numbers, followed by a new line
  * @argc: The number of arguments passed to the program
  * @argv: An array of pointers to the arguments
- * Return: If 1 of the nums contains symbols that aren't digits, print 1. Otherwise 0
+ * Return: If 1 of the nums contains symbols that aint digits, print 1. else 0
  */
 int main(int argc, char *argv[])
 {
