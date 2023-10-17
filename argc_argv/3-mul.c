@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+/**
+ * main - multiplies two numbers
+ * @argc: number of command-line arguments
+ * @argv: array of strings containing the arguments
+ * Return: 0 if it works
+ */
 int main(int argc, char *argv[])
 {
 	int num1 = atoi(argv[1]);
