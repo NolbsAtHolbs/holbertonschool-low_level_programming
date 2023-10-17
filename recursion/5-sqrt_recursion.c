@@ -7,6 +7,8 @@
  */
 int _sqrt_recursion(int n)
 {
+	int x = 1;
+
 	if (n < 0)
 	{
 		return (-1);
@@ -15,7 +17,6 @@ int _sqrt_recursion(int n)
 	{
 		return (n);
 	}
-	int x = 1;
 	while (x * x <= n)
 	{
 		if (x * x == n)
