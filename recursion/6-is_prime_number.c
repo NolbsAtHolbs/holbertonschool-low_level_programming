@@ -13,13 +13,13 @@ int checker(int n, int base)
 		return (0);
 	}
 	else if (n == base - 1)
-  {
+	{
 		return (1);
-  }
+	}
 	else if (base > n)
-  {
+	{
 		return (checker(n + 1, base));
-  }
+	}
 	return (1);
 }
 /**
