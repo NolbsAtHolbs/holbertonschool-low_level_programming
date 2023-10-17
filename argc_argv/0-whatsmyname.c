@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "libmy.a"
+#include <libmy.a>
 #include "main.h"
 /**
   *
