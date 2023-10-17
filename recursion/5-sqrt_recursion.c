@@ -7,23 +7,16 @@
  */
 int _sqrt_recursion(int n)
 {
-	int x = 1;
-
-	if (n < 0)
+	int x = 0;
+	int square = 0;
+	while (square <= n)
 	{
-		return (-1);
-	}
-	if (n == 0 || n == 1)
-	{
-		return (n);
-	}
-	while (x * x <= n)
-	{
-		if (x * x == n)
+		if (square == n)
 		{
 			return (x);
 		}
 		x++;
+		square = x * x;
 	}
 	return (-1);
 }
