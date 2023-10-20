@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "main2.h"
+#include "main.h"
 
 /**
  * _strncat - concats strings from one string to another
