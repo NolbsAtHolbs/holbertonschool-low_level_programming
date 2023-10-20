@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "main2.h"
+#include "main.h"
 
 /**
   * _strncpy - copies a string
