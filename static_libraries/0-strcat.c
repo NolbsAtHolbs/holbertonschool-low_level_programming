@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-#include "main2.h"
+#include "main.h"
 
 /**
  * _strcat - concatenates strings
