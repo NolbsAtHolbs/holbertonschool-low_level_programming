@@ -22,12 +22,12 @@ char *_strdup(char *str)
 	duplicate = (char *)malloc(length + 1);
 
 	if (duplicate == NULL)
-		{
-			return (NULL);
-		}
+	{
+		return (NULL);
+	}
 	for (i = 0; i <= length; i++)
-		{
-			duplicate[i] = str[i];
-		}
+	{
+		duplicate[i] = str[i];
+	}
 	return (duplicate);
 }
