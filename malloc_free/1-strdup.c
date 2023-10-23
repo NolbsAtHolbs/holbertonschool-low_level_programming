@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * _strdup - rtrns pntr 2 nwly alctd spc n mmry cntng cpy f d strng gvn as prmtr
+ * _strdup - rtrns pntr 2 nwly alctd spc n mmry cntg cpy f d strng gvn as prmtr
  * @str: input string to be duplicated
  * Return: pointer to the duplicated string, or NULL on failure
  */
