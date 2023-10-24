@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
   * main - prints name of file it was compiled from, then new line
-  * return: zero
+  * Return: zero
   */
 int main(void)
 {
