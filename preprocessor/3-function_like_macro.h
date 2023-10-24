@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * ABS - computes the absolute value of a number
+ * main - function-like macro ABS(x)
  * @x: the number for which the absolute value is calculated
  * Return: absolute value of x
  */
