@@ -12,7 +12,7 @@ char *str_concat(char *s1, char *s2)
 	int length_s2 = 0;
 	int i;
 	char *concatenated;
-	
+
 	if (s1 == NULL)
 	{
 		s1 = "";
@@ -30,7 +30,7 @@ char *str_concat(char *s1, char *s2)
 		length_s2++;
 	}
 	concatenated = (char *)malloc(length_s1 + length_s2 + 1);
-	
+
 	if (concatenated == NULL)
 	{
 		return (NULL);
