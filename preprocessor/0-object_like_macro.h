@@ -1,5 +1,5 @@
-#ifndef MYHEADER_H
-#define MYHEADER_H
+#ifndef MANGHANG_H
+#define MANGHANG_H
 
 #define SIZE 1024
 
