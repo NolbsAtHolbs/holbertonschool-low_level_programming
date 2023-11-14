@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include "lists.h"
 /**
- * delete_nodeint_at_index - deletes node at index `index` 
+ * delete_nodeint_at_index - deletes node at index `index`
  * of a listint_t linked list
  * @head: first node in linked list
  * @index: index of the node that should be deleted. Index starts at 0
