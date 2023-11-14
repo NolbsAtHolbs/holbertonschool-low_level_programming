@@ -10,7 +10,7 @@
  * @string: string
  * @length: string length
  * @next: will point to next node
- *
+ * _putchar - its putchar
  */
 
 typedef struct list_s
