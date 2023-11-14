@@ -7,6 +7,9 @@
 
 /*
  * struct list_s - singly linked list
+ * @string: string
+ * @length: string length
+ * @next: will point to next node
  * _putchar - its putchar
  */
 
