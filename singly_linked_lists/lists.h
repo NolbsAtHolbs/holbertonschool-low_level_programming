@@ -5,6 +5,11 @@
 #include <stdlib.h>
 #include <stddef.h>
 
+/*
+ * struct list_s - singly linked list
+ * _putchar - its putchar
+ */
+
 typedef struct list_s
 {
 	char *string;
