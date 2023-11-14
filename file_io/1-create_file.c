@@ -4,7 +4,7 @@
 /**
   * create_file - creates a file
   * @filename: name of the file, return -1 on NULL
-  * @text_content: NULL terminated string to write to the file. Create empty file if NULL
+  * @text_content: NULL termd strng to write to file. Create empty file if NULL
   * Return: 1 on success, -1 on failure
   */
 int create_file(const char *filename, char *text_content)
@@ -16,7 +16,7 @@ int create_file(const char *filename, char *text_content)
 		return (-1);
 	}
 	new_file = open(filename, O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
-	
+
 	if (new_file == -1)
 	{
 		return (-1);
@@ -31,7 +31,7 @@ int create_file(const char *filename, char *text_content)
 		;
 	}
 	wr_stat = write(new_file, text_content, len);
-	
+
 	if (close(new_file) == -1)
 	{
 		return (-1);
