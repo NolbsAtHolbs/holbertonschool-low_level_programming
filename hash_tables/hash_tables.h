@@ -7,8 +7,21 @@
 #include <string.h>
 
 /**
-* struct hash_table_s - Hash table data structure
-* @size: size of the array
+ * struct hash_node_s - node of a hash table
+ * @key: string associated with a value
+ * @value: value associated with a key
+ * @next: pointer to the next node of the List
+ */
+typedef struct hash_node_s
+{
+	char *key;
+	char *value;
+	struct hash_node_s *next;
+} hash_node_t;
+
+/**
+* struct hash_table_s - hash table data structure
+* @size: size of array
 * @array: array of size @size
 */
 typedef struct hash_table_s
