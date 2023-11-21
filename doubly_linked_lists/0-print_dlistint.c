@@ -15,7 +15,7 @@
     while (currentNode != NULL)
     {
         printf("%d\n", currentNode->n);
-        currentNode = current->next;
+        currentNode = currentNode->next;
         nodeCount++;
     }
     return (nodeCount);
