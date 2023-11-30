@@ -8,11 +8,11 @@
 */
 void hash_table_delete(hash_table_t *ht)
 {
+	unsigned long int i = 0;
+	hash_node_t *use = NULL;
+
 	if (ht == NULL)
 		return;
-
-    unsigned long int i = 0;
-    hash_node_t *use = NULL;
 
     while (i < ht->size)
     {
