@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "hash_tables.h"
 /**
 * hash_table_delete - deletes a hash table
@@ -6,23 +8,29 @@
 */
 void hash_table_delete(hash_table_t *ht)
 {
-	long unsigned int i = 0;
-
 	if (ht == NULL)
 		return;
 
-	while (i < ht->size)
-	{
-        hash_node_t *current = ht->array[i];
-        hash_node_t *next;
+    int i = 0;
+    hash_node_t *use = NULL;
 
-        while (current != NULL) {
-            next = current->next;
-            free(current);
-            current = next;
+    while (i < ht->size)
+    {
+        if (ht->array[i] != NULL)
+        {
+            use = ht->array[i];
+            while (ht->array[i] != NULL)
+            {
+                use = use->next;
+                free(ht->array[i]->key);
+                free(ht->array[i]->value);
+                free(ht->array[i]);
+                ht->array[i] = use;
+            }
         }
         i++;
     }
+
     free(ht->array);
     free(ht);
 }
